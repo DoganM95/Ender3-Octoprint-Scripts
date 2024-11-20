@@ -7,9 +7,7 @@ G28 ; Home all axes with BLTouch
 M190 S30 ; Wait for bed temperature to stabilize
 G29 ; Perform auto bed leveling with BLTouch
 M500 ; Store bed mesh in EEPROM
-M104 S150 ; Start preheating hotend to 150°C (async)
-M109 S150 ; Wait for hotend to reach 150°C
-M106 S255 ; Turn on fans immediately at 150°C
+M106 S255 ; Turn on fans (includes nozzle fan)
 M104 S200 ; Heat hotend to target temperature (async)
 M109 S200 ; Wait for hotend to reach target temperature
 G92 E0 ; Reset extruder
