@@ -2,7 +2,6 @@ ENC O1 S0 ; Red bed light on
 ENC O2 S100 ; Green bed light off
 ENC O3 S100 ; Blue bed light off
 M140 S30 ; Set bed temperature (async)
-G1 Z20.0 ; Raise Z axis
 G28 ; Home all axes with BLTouch
 M190 S30 ; Wait for bed temperature to stabilize
 G29 ; Perform auto bed leveling with BLTouch
