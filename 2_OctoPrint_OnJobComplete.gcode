@@ -5,7 +5,7 @@ M400 ; Wait for current moves to finish
 G91 ; Relative positioning
 G1 E-2 Z10 F2400 ; Retract and raise Z
 G90 ; Absolute positioning
-G1 Z240 ; Raise Z to highest
+G1 Z230 ; Raise Z to highest - safety
 G1 X0 Y170 ; Present print
 M104 S0 ; Turn-off hotend heat
 M140 S0 ; Turn-off bed heat
